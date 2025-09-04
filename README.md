@@ -1,46 +1,52 @@
-# BSTDictionary
+# BST Dictionary 🔹 C++ / Qt GUI
 
-Implemented a C++ template-based Binary Search Tree dictionary with insert, search, and remove functionalities. Added a Qt GUI to visualize and interact with the dictionary. Focus was on data structures; GUI was added for demonstration!
+![C++](https://img.shields.io/badge/C++-17-blue)
+![Qt](https://img.shields.io/badge/Qt-6.6-green)
 
-## Features
+Implemented a C++ template-based Binary Search Tree dictionary with insert, search, and remove functionalities. Added a Qt GUI to visualize and interact with the dictionary. Focus was on data structures; GUI was added for demonstration.
 
-- Template-based Binary Search Tree implementation.
-- Dictionary operations:
-  - Insert / Update words and meanings
-  - Search for words
-  - Remove words
-- In-order traversal for displaying all words.
-- Save/load dictionary data to `dictionary.txt`.
-- Simple Qt GUI to interact with the dictionary.
 
-## Screenshots
+## Features 🔹
+
+| Feature       | Description                              |
+|---------------|------------------------------------------|
+| Insert/Update | Add new words or update existing entries |
+| Search        | Find a word and its meaning              |
+| Remove        | Delete a word from dictionary            |
+| Show All      | Display all words in order               |
+
+
+## Screenshots 🖼
+
+![BST GUI Example](screenshots/bst_gui_example.png)
 
 <img width="702" height="508" alt="image" src="https://github.com/user-attachments/assets/74ca5b2f-4e10-4ded-9b9c-2e9d29538688" />
 
 <img width="701" height="505" alt="image" src="https://github.com/user-attachments/assets/ad954ee7-09c7-4ad5-be92-61be11d131f2" />
 
 
-## Build Instructions (Linux / WSL)
+## Clone & Run 🚀
 
-1. Install Qt6 and CMake:
+You can quickly clone this repository and run the project locally.
 
-sudo apt update
-sudo apt install qt6-base-dev qt6-tools-dev qt6-tools-dev-tools cmake g++
-
-2 .Clone the repository:
-
-git clone <repo-url>
+```bash
+# Clone the repo
+git clone https://github.com/<your-username>/BSTDictionary.git
 cd BSTDictionary
 
-3 .Build:
-
+# Create a build folder
 mkdir build
 cd build
+
+# Configure CMake (replace Qt path if needed)
 cmake .. -DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6
+
+# Build the project
 cmake --build .
 
-4. Run:
-
+# Run the application
 ./bst_dictionary_gui
+
+
 
 
